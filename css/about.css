@@ -1,0 +1,185 @@
+
+/* =================================== ABOUT US =================================== */
+
+.about__us {
+    margin-top: 3rem;
+}
+
+.about__us-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 5rem;
+    margin-top: 5rem;
+}
+
+.about__us-right > p {
+    margin: 1.6rem 0 2.5rem;
+}
+
+.about__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.about__cards h3{
+    color: var(--text);
+}
+
+.about__card {
+    background: var(--secondary);
+    padding: 1.6rem;
+    /* padding: 2rem; */
+    border-radius: 2rem;
+    transition: var(--transition);
+    text-align: center;
+}
+
+.about__card p {
+    margin-top: 1rem;
+}
+
+.about__card:hover {
+    box-shadow: 0 1rem 1rem var(--primary);
+    z-index: 1;
+}
+
+.about__icon {
+    background: var(--primary);
+    padding: 0.6rem;
+    border-radius: 0.9rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+  
+/* =================================== TEAM =================================== */
+
+.team {
+    background-image: url('../images/wave-haikei.svg');
+    background-size: cover;
+}
+
+.team__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem; 
+}
+
+.team__member {
+    background: var(--secondary);
+    padding: 2rem;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.team__member h4 {
+    color: var(--text);
+}
+
+.team__member:hover {
+    box-shadow: 0 0rem 1rem var(--secondary);
+    z-index: 1;
+}
+
+.team__member-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team__member-image img {
+    border-radius: 50%;
+    width: 150px;
+    height: auto;
+}
+
+.team__member-info {
+    text-align: center;
+    margin-top: 1.4rem;
+}
+
+.team__member-info p{
+    margin-top: 0.7rem;
+}
+
+.team__member-socials {
+    position:absolute;
+    font-size: 1.5rem;
+    top: 0%;
+    /* right: 0; */
+    right: -100%;
+    /* width: 50px; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    background: #adc584;
+    border-radius: 0rem 1rem;
+    transition: var(--transition);
+}
+
+.team__member:hover .team__member-socials {
+    right: 0;
+}
+
+.team__member-socials a {
+    padding: 1rem;
+}
+
+/* =================================== MEDIA QUERIES (TABLET) =================================== */
+
+@media screen and (max-width: 1024px) {
+    .about__us {
+      margin-top: 2rem;
+    }
+
+    .about__us-container {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .about__us-left {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /* .team__container {
+        grid-template-columns: repeat(2, 1fr);
+    } */
+}
+
+/* =================================== MEDIA QUERIES (PHONE) =================================== */
+
+@media screen and (max-width: 600px) {
+
+    .about__us-right {
+        padding: 1rem;
+    }
+
+    .about__card {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.7rem;
+        padding: 1rem;
+    }
+
+    .team__member {
+        padding: 0;
+    }
+
+    .team__member p {
+        margin-bottom: 1.4rem;
+        font-size: 12px;
+        padding: 0.15rem;
+    }
+
+    .team__member-image img {
+        border-radius: 50%;
+        width: 50px;
+        height: auto;
+        margin-top: 1rem;
+    }
+}

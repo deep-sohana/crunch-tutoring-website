@@ -1,0 +1,74 @@
+/* =================================== PRICING =================================== */
+
+.benefit {
+    transition: var(--transition);
+    margin-top: -1rem;
+}
+
+.benefit:hover {
+    box-shadow: 1rem 1rem 1rem var(--primary);
+    transform: scale(1.05); 
+}
+
+.benefit__image img {
+    margin-top: 1rem;
+    width: 250px;
+}
+
+.benefit__info {
+    padding: 1.5rem;
+}
+
+.benefit__info h3 {
+    color: var(--background);
+}
+
+.benefit:hover .benefit__info > h3 {
+    transform: scale(1.15);
+    /* color: var(--primary); */
+    letter-spacing: 2;
+    transition: var(--transition);
+}
+
+.benefit:nth-child(3) .benefit__image{
+    margin-top: 0;
+  }
+
+.card-detail {
+    margin-bottom: -0.5rem;
+}
+
+.card-detail > p {
+    /* padding: 0.6rem 0.5rem; */
+    font-size: 0.8rem;
+    border-bottom: 1px solid #d5d5d5;
+    text-align: center;
+}
+
+.uil-check-circle {
+    color: #22d022;
+    margin-left: 1rem;
+    font-size: 1.25rem;
+}
+
+.uil-times-circle {
+    color: #dc615b;
+    margin-left: 1rem;
+    font-size: 1.25rem;
+}
+
+.card-price {
+    align-items: center;
+}
+
+.card-price > p {
+    font-size: 2rem;
+    /* font-weight: 800; */
+    /* margin-bottom: 1rem; */
+}
+
+.card-price > p > sup,
+.card-price > p > sub {
+    font-size: 1rem;
+}
+
