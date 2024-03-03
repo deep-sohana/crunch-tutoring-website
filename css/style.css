@@ -540,7 +540,7 @@ footer u li a:hover {
   .nav__menu li a {
     background: var(--secondary);
     border-radius: 2rem;
-    box-shadow: -4rem 6rem 10rem var(--primary);
+    /* box-shadow: -4rem 6rem 10rem var(--primary); */
     width: 100%;
     height: 100%;
     display: grid;
