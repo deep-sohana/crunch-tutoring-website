@@ -5,6 +5,10 @@
     margin-top: -1rem;
 }
 
+.benefits {
+    margin-top: -5rem;
+}
+
 .benefit:hover {
     box-shadow: 1rem 1rem 1rem var(--primary);
     transform: scale(1.05); 
