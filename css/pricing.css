@@ -5,6 +5,10 @@
     margin-top: -1rem;
 }
 
+.benefits {
+    margin-top: -5rem;
+}
+
 .benefit:hover {
     box-shadow: 1rem 1rem 1rem var(--primary);
     transform: scale(1.05); 
@@ -12,11 +16,11 @@
 
 .benefit__image img {
     margin-top: 1rem;
-    width: 250px;
+    width: 175px;
 }
 
 .benefit__info {
-    padding: 1.5rem;
+    padding: 1rem;
 }
 
 .benefit__info h3 {
@@ -35,7 +39,7 @@
   }
 
 .card-detail {
-    margin-bottom: -0.5rem;
+    margin-bottom: -1rem;
 }
 
 .card-detail > p {
@@ -43,6 +47,7 @@
     font-size: 0.8rem;
     border-bottom: 1px solid #d5d5d5;
     text-align: center;
+    margin-bottom: 1.5rem;
 }
 
 .uil-check-circle {
@@ -64,7 +69,7 @@
 .card-price > p {
     font-size: 2rem;
     /* font-weight: 800; */
-    /* margin-bottom: 1rem; */
+    margin-bottom: 1rem;
 }
 
 .card-price > p > sup,
